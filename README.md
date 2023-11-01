@@ -3,19 +3,23 @@ Tourism is rapidly growing at an uprecedented rate especially after post covid e
 
 Our project aims to help these home owners understand the analytics of this marketplace and make informed decisions to maximize their business profit. We are providng the user with useful insights into this market and provide a platform where user will be able to understand the chances of his property being booked based on various factors.
 
-#Dataset Description#
+### Dataset Description
 
-<img width="836" alt="WhatsApp Image 2023-11-01 at 11.44.44 PM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/6cca047d-3e48-4f71-bbd7-c47fba6d4971">
+[shriramvatturkar22071206107.ipynb - Colaboratory.pdf](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/files/13230833/shriramvatturkar22071206107.ipynb.-.Colaboratory.pdf)
+![WhatsApp Image 2023-11-01 at 11 44 44 PM](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/3202122f-a8d3-4823-8d41-ba3492d918fa)
 
-The dataset contains of 15 columns and 400 rows.
 
-#Dataset Collection#
+The dataset contains 15 columns and 400 rows.
+
+### Dataset Collection ###
 We have collected the data by scraping it from the airbnb website using Apify datascraping tool.
 
-###Data Preprocessing###
+![WhatsApp Image 2023-11-01 at 11 44 38 PM](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/d5cb2b57-c980-42af-b4ac-6fedb1be60dd)
 
-Dropping Uneccessary Columns: 
-'''
+### Data Preprocessing ###
+
+Removing Uneccessary Columns: 
+```
 df.drop([
     "picture/url",
     "pictures/contextual/0/id",
@@ -49,4 +53,25 @@ df.drop([
     "pictures/contextual/5/messages/3",
     "pictures/contextual/5/url"
 ], axis=1, inplace =True)
-'''
+
+```
+
+### Changing the Column Indexes to Desired Position
+```
+df = df.reindex(columns=change_column)
+df.head(3)
+```
+
+### Renaming Columns
+```
+df.rename(columns = {'pricing_info/cancel_policy/name' : "cancel_policy", "pricing_quote/primary/price" : "pricing"}, inplace = True)
+```
+### Checking for Null Values in the Data and Removing them
+```
+df.isnull().sum()
+df.dropna(inplace = True)
+```
+### Merging all the processed datasets together
+```
+data = pd.concat([df, df_sec, df_third, df_fourth, df_fifth], ignore_index=True)
+```
