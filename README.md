@@ -5,7 +5,6 @@ Our project aims to help these homeowners understand the analytics of this marke
 
 ### Dataset Description
 
-[shriramvatturkar22071206107.ipynb - Colaboratory.pdf](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/files/13230833/shriramvatturkar22071206107.ipynb.-.Colaboratory.pdf)
 ![WhatsApp Image 2023-11-01 at 11 44 44 PM](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/3202122f-a8d3-4823-8d41-ba3492d918fa)
 
 
