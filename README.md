@@ -3,7 +3,7 @@ Tourism is rapidly growing at an unprecedented rate, especially after the COVID 
 
 Our project aims to help these homeowners understand the analytics of this marketplace and make informed decisions to maximize their business profit. We are providing the user with useful insights into this market and provide a platform where the user will be able to determine what the listing price for their property should be. User can also determine what should you expect to provide for a certain price change.
 
-##Dataset Description
+## Dataset Description
 
 ![WhatsApp Image 2023-11-01 at 11 44 44 PM](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/3202122f-a8d3-4823-8d41-ba3492d918fa)
 
