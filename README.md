@@ -120,4 +120,10 @@ In the given figure, red is the highest correlation between two columns while bl
 
 
 
+https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/3b6fed67-4f3a-4982-b64a-5412eec86ccb
+
+
+
+
+
 
