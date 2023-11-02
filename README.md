@@ -1,23 +1,35 @@
 # Airbnb Insights: Predictive Booking Analysis  
 Tourism is rapidly growing at an unprecedented rate, especially after the COVID era. It has undergone significant changes in the past years where the traditional concept of staying in a hotel doesn't entertain tourists anymore. Tourists have started exploring more options that allow freedom of travel and comfortable accommodation at a reasonable price. Airbnb is a popular online marketplace that connects property owners with travellers who are looking for short-term accommodations. It has transformed the way people find and book places to stay while travelling for various purposes, including vacations and business trips. It provides quick and easy access to passive income for homeowners who can't rent out their property for the long term but can provide quick accommodations to tourists whenever their property is available. 
 
-Our project aims to help these homeowners understand the analytics of this marketplace and make informed decisions to maximize their business profit. We are providing the user with useful insights into this market and provide a platform where the user will be able to understand the chances of his property being booked based on various factors.
+Our project aims to help these homeowners understand the analytics of this marketplace and make informed decisions to maximize their business profit. We are providing the user with useful insights into this market and provide a platform where the user will be able to determine what the listing price for their property should be. User can also determine what should you expect to provide for a certain price change.
 
-### Dataset Description
+##Dataset Description
 
 ![WhatsApp Image 2023-11-01 at 11 44 44 PM](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/3202122f-a8d3-4823-8d41-ba3492d918fa)
 
 
 The dataset contains 15 columns and 400 rows.
 
-### Dataset Collection ###
+## Dataset Collection 
 We have collected the data by scraping it from the Airbnb website using the Apify data scraping tool.
 
 ![WhatsApp Image 2023-11-01 at 11 44 38 PM](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/d5cb2b57-c980-42af-b4ac-6fedb1be60dd)
 
 ## Data Preprocessing 
+We scraped Airbnb data using a web scraping automation website called Apify, where pre-build web scrapers are available for scraping.
 
-Removing Unnecessary Columns: 
+we scraped the data four times because the maximum data a single run can get is 80.
+
+We exported the scraped data into Excel sheets,
+
+first excel sheet contains data of Airbnb listings in Pune.
+Second sheet contains data of airbnb listing in Goa
+Third sheet contains data of airbnb listings in Mumbai
+Fourth sheet contains data of aibrnba listing in Hyderabad
+fifth contains Benguluru data
+
+
+## Removing Unnecessary Columns: 
 ```
 df.drop([
     "picture/url",
@@ -99,5 +111,13 @@ The majority of the properties listed in the dataset are entire homes, followed 
 The majority of the properties being listed have either one-bedroom or two-bedroom facilities. 
 
 ## Correlation Heatmap
+Correlation Heatmap provides useful insights into our data. It shows the correlation of all the columns against all the columns in the dataset.
+In the given figure, red is the highest correlation between two columns while blue is the lowest.
+
 ![Screenshot 2023-11-02 012424](https://github.com/Shriram-Vatturkar/airbnb-Price-Prediction/assets/140342007/6fe9d32e-7a88-472b-82fb-c957608cea6d)
+
+
+
+
+
 
